@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 import logging
 
-logging.basicConfig(level=logging.INFO , format='[%(asctime)s]: %(message)s:')
+logging.basicConfig(level=logging.INFO , format='[%(asctime)s]: %(message)s;')
 
 list_of_files = [
     '.github/workflows/.gitkeep',
@@ -19,7 +19,8 @@ list_of_files = [
     'params.yaml',
     'setup.py',
     'requirements.txt',
-    'research/trials.ipynb'
+    'research/trials.ipynb',
+    'templates/index.html'
 ]
 
 for filepath in list_of_files:
