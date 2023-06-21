@@ -1,6 +1,6 @@
 from CDC.constants import *
 from CDC.utils.helper_functions import read_yaml, create_directories
-from CDC.entity.config_entity import DataIngestionConfig, BaseModelConfig, CallbacksConfig
+from CDC.entity.config_entity import DataIngestionConfig, BaseModelConfig, CallbacksConfig, TrainingConfig
 import os
 from box import ConfigBox
 
@@ -56,3 +56,23 @@ class ConfigurationManager:
             tensorboard_root_log_dir = Path(config.tensorboard_root_log_dir)
         )
         return callbacks_config
+
+
+    def get_training_config(self):
+        training = self.config.training
+        base_model = self.config.base_model
+        params = self.params
+        training_data = os.path.join(self.config.data_ingestion.unzip_dir, "Chicken-fecal-images")
+        create_directories([Path(training.root_dir)])
+        training_config = TrainingConfig(
+            root_dir = Path(training.root_dir),
+            trained_model_path = Path(training.trained_model_path),
+            training_data = Path(training_data),
+            updated_base_model_path = Path(base_model.updated_base_model_path),
+            params_epochs = params.EPOCHS,
+            params_image_size = params.INPUT_SHAPE,
+            params_batch_size = params.BATCH_SIZE,
+            params_is_augmentation = params.AUGMENTATION
+        )
+
+        return training_config
