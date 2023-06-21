@@ -22,3 +22,11 @@ class BaseModelConfig:
     params_classes : int
     params_batch_size : int
     params_epochs : int
+
+@dataclass(frozen=True)
+class CallbacksConfig:
+    root_dir : Path 
+    tensorboard_root_log_dir : Path
+    checkpoint_model_filepath : Path
+
+    

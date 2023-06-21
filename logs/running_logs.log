@@ -203,3 +203,164 @@ Source-Age: 0
 [2023-06-21 03:11:10,935: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
 [2023-06-21 03:11:11,217: WARNING: optimizer: `lr` is deprecated, please use `learning_rate` instead, or use the legacy optimizer, e.g.,tf.keras.optimizers.legacy.SGD.]
 [2023-06-21 03:11:11,429: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 17:56:23,067: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 17:56:23,077: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 17:56:23,080: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 17:56:23,081: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 17:56:23,085: INFO: helper_functions: created directory at: artifacts/data]
+[2023-06-21 17:56:23,086: INFO: data_ingestion: File already exists]
+[2023-06-21 17:56:36,367: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 17:56:36,376: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 17:56:36,382: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 17:56:36,385: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 17:56:36,395: INFO: helper_functions: created directory at: artifacts/data]
+[2023-06-21 17:56:57,745: INFO: data_ingestion: artifacts/data/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 55D0:9141:3777C7:42199D:6492F387
+Accept-Ranges: bytes
+Date: Wed, 21 Jun 2023 12:56:42 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fjr990025-FJR
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1687352199.145886,VS0,VE3302
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 655c1332711355beea20f73de80a107e1bb20904
+Expires: Wed, 21 Jun 2023 13:01:42 GMT
+Source-Age: 3
+
+]
+[2023-06-21 17:56:58,392: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 17:56:58,393: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 17:56:58,399: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 17:56:58,402: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 17:56:58,404: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 17:56:58,408: INFO: helper_functions: created directory at: artifacts/base_model]
+[2023-06-21 17:56:59,321: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-21 17:56:59,478: WARNING: optimizer: `lr` is deprecated, please use `learning_rate` instead, or use the legacy optimizer, e.g.,tf.keras.optimizers.legacy.SGD.]
+[2023-06-21 17:56:59,633: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 17:56:59,634: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage started >>>>>>>>>>>]
+[2023-06-21 17:56:59,634: ERROR: main: name 'CallBacksPipeline' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 32, in <module>
+    obj = CallBacksPipeline()
+NameError: name 'CallBacksPipeline' is not defined
+[2023-06-21 18:01:21,899: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 18:01:21,904: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 18:01:21,907: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 18:01:21,913: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 18:01:21,914: INFO: helper_functions: created directory at: artifacts/data]
+[2023-06-21 18:01:39,262: INFO: data_ingestion: artifacts/data/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 55D0:9141:3777C7:42199D:6492F387
+Accept-Ranges: bytes
+Date: Wed, 21 Jun 2023 13:01:24 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fjr990028-FJR
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1687352485.563030,VS0,VE3
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: ed3868d4eecd799e2ba86ca36bd697766aec865c
+Expires: Wed, 21 Jun 2023 13:06:24 GMT
+Source-Age: 285
+
+]
+[2023-06-21 18:01:39,816: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 18:01:39,817: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 18:01:39,823: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 18:01:39,826: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 18:01:39,827: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 18:01:39,829: INFO: helper_functions: created directory at: artifacts/base_model]
+[2023-06-21 18:01:40,553: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-21 18:01:40,692: WARNING: optimizer: `lr` is deprecated, please use `learning_rate` instead, or use the legacy optimizer, e.g.,tf.keras.optimizers.legacy.SGD.]
+[2023-06-21 18:01:40,830: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 18:01:40,831: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage started >>>>>>>>>>>]
+[2023-06-21 18:01:40,837: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 18:01:40,840: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 18:01:40,843: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 18:01:40,845: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage completed >>>>>>>>>>>]
+[2023-06-21 18:03:40,579: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 18:03:40,586: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 18:03:40,590: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 18:03:40,592: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 18:03:40,596: INFO: helper_functions: created directory at: artifacts/data]
+[2023-06-21 18:03:40,599: INFO: data_ingestion: File already exists]
+[2023-06-21 18:03:41,050: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 18:03:41,050: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 18:03:41,057: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 18:03:41,060: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 18:03:41,061: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 18:03:41,063: INFO: helper_functions: created directory at: artifacts/base_model]
+[2023-06-21 18:03:41,781: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-21 18:03:41,952: WARNING: optimizer: `lr` is deprecated, please use `learning_rate` instead, or use the legacy optimizer, e.g.,tf.keras.optimizers.legacy.SGD.]
+[2023-06-21 18:03:42,108: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 18:03:42,108: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage started >>>>>>>>>>>]
+[2023-06-21 18:03:42,113: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 18:03:42,116: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 18:03:42,117: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 18:03:42,119: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage completed >>>>>>>>>>>]
+[2023-06-21 18:06:18,560: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 18:06:18,566: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 18:06:18,591: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 18:06:18,597: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 18:06:18,603: INFO: helper_functions: created directory at: artifacts/data]
+[2023-06-21 18:06:18,604: INFO: data_ingestion: File already exists]
+[2023-06-21 18:06:19,031: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 18:06:19,032: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 18:06:19,035: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 18:06:19,038: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 18:06:19,039: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 18:06:19,041: INFO: helper_functions: created directory at: artifacts/base_model]
+[2023-06-21 18:06:19,747: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-21 18:06:19,919: WARNING: optimizer: `lr` is deprecated, please use `learning_rate` instead, or use the legacy optimizer, e.g.,tf.keras.optimizers.legacy.SGD.]
+[2023-06-21 18:06:20,065: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 18:06:20,066: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage started >>>>>>>>>>>]
+[2023-06-21 18:06:20,069: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 18:06:20,072: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 18:06:20,073: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 18:06:20,074: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage completed >>>>>>>>>>>]
+[2023-06-21 18:07:30,760: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 18:07:30,770: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 18:07:30,775: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 18:07:30,777: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 18:07:30,778: INFO: helper_functions: created directory at: artifacts/data]
+[2023-06-21 18:07:30,779: INFO: data_ingestion: File already exists]
+[2023-06-21 18:07:31,268: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 18:07:31,269: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 18:07:31,275: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 18:07:31,279: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 18:07:31,281: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 18:07:31,282: INFO: helper_functions: created directory at: artifacts/base_model]
+[2023-06-21 18:07:31,925: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-21 18:07:32,100: WARNING: optimizer: `lr` is deprecated, please use `learning_rate` instead, or use the legacy optimizer, e.g.,tf.keras.optimizers.legacy.SGD.]
+[2023-06-21 18:07:32,247: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 18:07:32,248: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage started >>>>>>>>>>>]
+[2023-06-21 18:07:32,253: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 18:07:32,256: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 18:07:32,257: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 18:07:32,261: INFO: helper_functions: created directory at: artifacts/callbacks/tensorboard_log_dir]
+[2023-06-21 18:07:32,264: INFO: helper_functions: created directory at: artifacts/callbacks/checkpoint_dir]
+[2023-06-21 18:07:32,265: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage completed >>>>>>>>>>>]

@@ -1,7 +1,7 @@
 from CDC.constants import *
 from CDC.utils.helper_functions import read_yaml, create_directories
-from CDC.entity.config_entity import DataIngestionConfig, BaseModelConfig
-
+from CDC.entity.config_entity import DataIngestionConfig, BaseModelConfig, CallbacksConfig
+import os
 from box import ConfigBox
 
 class ConfigurationManager:
@@ -44,3 +44,15 @@ class ConfigurationManager:
         )
         
         return base_model_config
+
+    def get_callbacks_config(self) -> CallbacksConfig:
+        config = self.config.callbacks
+        model_checkpoint_dir = os.path.dirname(config.checkpoint_model_filepath)
+        create_directories([config.tensorboard_root_log_dir,
+                            model_checkpoint_dir])
+        callbacks_config = CallbacksConfig(
+            root_dir = Path(config.root_dir),
+            checkpoint_model_filepath = Path(config.checkpoint_model_filepath),
+            tensorboard_root_log_dir = Path(config.tensorboard_root_log_dir)
+        )
+        return callbacks_config
