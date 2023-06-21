@@ -968,3 +968,85 @@ Traceback (most recent call last):
     imgdata = base64.b64decode(imgstring)
 NameError: name 'base64' is not defined
 [2023-06-22 00:03:38,743: INFO: _internal: 127.0.0.1 - - [22/Jun/2023 00:03:38] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-06-22 00:05:51,845: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.10.7:8080]
+[2023-06-22 00:05:51,848: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-06-22 00:05:55,300: INFO: _internal: 127.0.0.1 - - [22/Jun/2023 00:05:55] "GET / HTTP/1.1" 200 -]
+[2023-06-22 00:06:02,349: INFO: _internal: 127.0.0.1 - - [22/Jun/2023 00:06:02] "POST /predict HTTP/1.1" 200 -]
+[2023-06-22 00:06:47,153: INFO: _internal: 127.0.0.1 - - [22/Jun/2023 00:06:47] "GET / HTTP/1.1" 200 -]
+[2023-06-22 00:06:59,850: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-22 00:06:59,856: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-22 00:06:59,860: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-22 00:06:59,861: INFO: helper_functions: created directory at: artifacts]
+[2023-06-22 00:06:59,862: INFO: helper_functions: created directory at: artifacts/data]
+[2023-06-22 00:06:59,863: INFO: data_ingestion: File already exists]
+[2023-06-22 00:07:00,612: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-22 00:07:00,617: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-22 00:07:00,624: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-22 00:07:00,632: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-22 00:07:00,635: INFO: helper_functions: created directory at: artifacts]
+[2023-06-22 00:07:00,638: INFO: helper_functions: created directory at: artifacts/base_model]
+[2023-06-22 00:07:02,670: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-22 00:07:03,038: WARNING: optimizer: `lr` is deprecated, please use `learning_rate` instead, or use the legacy optimizer, e.g.,tf.keras.optimizers.legacy.SGD.]
+[2023-06-22 00:07:03,426: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-22 00:07:03,453: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage started >>>>>>>>>>>]
+[2023-06-22 00:07:03,471: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-22 00:07:03,477: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-22 00:07:03,478: INFO: helper_functions: created directory at: artifacts]
+[2023-06-22 00:07:03,482: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage completed >>>>>>>>>>>]
+[2023-06-22 00:07:03,483: INFO: main: <<<<<<<<< STAGE: Training Stage started >>>>>>>>>>>]
+[2023-06-22 00:07:03,491: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-22 00:07:03,501: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-22 00:07:03,503: INFO: helper_functions: created directory at: artifacts]
+[2023-06-22 00:07:03,504: ERROR: main: name 'os' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 45, in <module>
+    obj.main()
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_04_training.py", line 30, in main
+    raise e
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_04_training.py", line 17, in main
+    callbacks_config = config.get_callbacks_config()
+  File "d:\projects\chicken disease classification\src\CDC\config\configuration.py", line 49, in get_callbacks_config
+    model_checkpoint_dir = os.path.dirname(config.checkpoint_model_filepath)
+NameError: name 'os' is not defined
+[2023-06-22 00:07:03,510: INFO: main: <<<<<<<<< STAGE: Model Evaluation Stage started >>>>>>>>>>>]
+[2023-06-22 00:07:03,518: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-22 00:07:03,524: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-22 00:07:03,526: INFO: helper_functions: created directory at: artifacts]
+[2023-06-22 00:08:06,245: INFO: helper_functions: json file saved at: scores.json]
+[2023-06-22 00:08:06,246: INFO: main: <<<<<<<<< STAGE: Model Evaluation Stage completed >>>>>>>>>>>]
+[2023-06-22 00:08:06,969: INFO: _internal: 127.0.0.1 - - [22/Jun/2023 00:08:06] "GET /train HTTP/1.1" 200 -]
+[2023-06-22 00:08:07,045: INFO: _internal: 127.0.0.1 - - [22/Jun/2023 00:08:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2023-06-22 00:08:20,456: INFO: _internal: 127.0.0.1 - - [22/Jun/2023 00:08:20] "GET / HTTP/1.1" 200 -]
+[2023-06-22 00:55:48,569: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.10.7:8080]
+[2023-06-22 00:55:48,572: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-06-22 00:56:02,839: INFO: _internal: 127.0.0.1 - - [22/Jun/2023 00:56:02] "GET / HTTP/1.1" 200 -]
+[2023-06-22 00:56:30,556: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Projects\Chicken Disease Classification\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Projects\Chicken Disease Classification\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Projects\Chicken Disease Classification\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Projects\Chicken Disease Classification\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Projects\Chicken Disease Classification\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Projects\Chicken Disease Classification\venv\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\predict.py", line 16, in predict
+    model = load_model(os.path.join("artifacts","training", "model.h5"))
+  File "D:\Projects\Chicken Disease Classification\venv\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\Projects\Chicken Disease Classification\venv\lib\site-packages\keras\saving\legacy\save.py", line 228, in load_model
+    f"No file or directory found at {filepath_str}"
+OSError: No file or directory found at artifacts\training\model.h5
+[2023-06-22 00:56:30,659: INFO: _internal: 127.0.0.1 - - [22/Jun/2023 00:56:30] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
