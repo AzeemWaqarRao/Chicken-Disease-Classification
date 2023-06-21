@@ -8,6 +8,7 @@ from ensure import ensure_annotations
 from typing import Any
 from CDC import logger
 import json
+import base64
 
 
 @ensure_annotations

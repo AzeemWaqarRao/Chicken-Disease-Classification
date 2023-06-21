@@ -942,3 +942,29 @@ NameError: name 'os' is not defined
 [2023-06-21 23:16:31,636: INFO: helper_functions: created directory at: artifacts]
 [2023-06-21 23:17:27,664: INFO: helper_functions: json file saved at: scores.json]
 [2023-06-21 23:17:27,672: INFO: main: <<<<<<<<< STAGE: Model Evaluation Stage completed >>>>>>>>>>>]
+[2023-06-22 00:03:05,662: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.10.7:8080]
+[2023-06-22 00:03:05,667: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-06-22 00:03:12,184: INFO: _internal: 127.0.0.1 - - [22/Jun/2023 00:03:12] "GET / HTTP/1.1" 200 -]
+[2023-06-22 00:03:38,672: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Projects\Chicken Disease Classification\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Projects\Chicken Disease Classification\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Projects\Chicken Disease Classification\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Projects\Chicken Disease Classification\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Projects\Chicken Disease Classification\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Projects\Chicken Disease Classification\venv\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 39, in predictRoute
+    decodeImage(image, clApp.filename)
+  File "d:\projects\chicken disease classification\src\CDC\utils\helper_functions.py", line 100, in decodeImage
+    imgdata = base64.b64decode(imgstring)
+NameError: name 'base64' is not defined
+[2023-06-22 00:03:38,743: INFO: _internal: 127.0.0.1 - - [22/Jun/2023 00:03:38] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
