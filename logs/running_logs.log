@@ -544,3 +544,401 @@ Source-Age: 1
 [2023-06-21 19:55:53,924: INFO: helper_functions: created directory at: artifacts/callbacks/checkpoint_dir]
 [2023-06-21 19:55:53,927: INFO: helper_functions: created directory at: artifacts\training]
 [2023-06-21 20:03:04,377: INFO: main: <<<<<<<<< STAGE: Training Stage completed >>>>>>>>>>>]
+[2023-06-21 21:21:10,722: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 21:21:10,728: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 21:21:10,730: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 21:22:23,619: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 21:22:23,624: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 21:22:23,626: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 21:23:01,548: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 21:23:01,552: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 21:23:01,554: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 21:23:35,970: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 21:23:35,977: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 21:23:35,979: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 21:27:24,125: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 21:27:24,130: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 21:27:24,133: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 22:39:31,787: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 22:39:31,792: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 22:39:31,795: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 22:41:17,864: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 22:41:17,871: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 22:41:17,873: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 22:42:50,576: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 22:42:50,582: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 22:42:50,584: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 22:46:00,669: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 22:46:00,679: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 22:46:00,682: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 22:54:22,736: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 22:54:22,743: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 22:54:22,746: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:05:24,478: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 23:05:24,485: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:05:24,490: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:05:24,491: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:05:24,493: INFO: helper_functions: created directory at: artifacts/data]
+[2023-06-21 23:05:24,497: INFO: data_ingestion: File already exists]
+[2023-06-21 23:05:25,019: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:05:25,020: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 23:05:25,024: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:05:25,026: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:05:25,027: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:05:25,029: INFO: helper_functions: created directory at: artifacts/base_model]
+[2023-06-21 23:05:25,876: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-21 23:05:26,092: WARNING: optimizer: `lr` is deprecated, please use `learning_rate` instead, or use the legacy optimizer, e.g.,tf.keras.optimizers.legacy.SGD.]
+[2023-06-21 23:05:26,297: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:05:26,297: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage started >>>>>>>>>>>]
+[2023-06-21 23:05:26,305: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:05:26,309: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:05:26,311: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:05:26,317: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:05:26,322: INFO: main: <<<<<<<<< STAGE: Training Stage started >>>>>>>>>>>]
+[2023-06-21 23:05:26,328: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:05:26,337: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:05:26,342: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:05:26,343: ERROR: main: name 'os' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 45, in <module>
+    obj.main()
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_04_training.py", line 30, in main
+    raise e
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_04_training.py", line 17, in main
+    callbacks_config = config.get_callbacks_config()
+  File "d:\projects\chicken disease classification\src\CDC\config\configuration.py", line 49, in get_callbacks_config
+    model_checkpoint_dir = os.path.dirname(config.checkpoint_model_filepath)
+NameError: name 'os' is not defined
+[2023-06-21 23:05:26,349: INFO: main: <<<<<<<<< STAGE: Model Evaluation Stage started >>>>>>>>>>>]
+[2023-06-21 23:05:26,362: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:05:26,365: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:05:26,370: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:05:27,365: ERROR: main: name 'model' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 56, in <module>
+    obj.main()
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_05_model_evaluation.py", line 22, in main
+    raise e
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_05_model_evaluation.py", line 18, in main
+    evaluation.evaluation()
+  File "d:\projects\chicken disease classification\src\CDC\components\model_evaluation.py", line 47, in evaluation
+    self.score = model.evaluate(self.valid_generator)
+NameError: name 'model' is not defined
+[2023-06-21 23:06:40,065: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 23:06:40,076: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:06:40,095: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:06:40,096: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:06:40,098: INFO: helper_functions: created directory at: artifacts/data]
+[2023-06-21 23:06:40,100: INFO: data_ingestion: File already exists]
+[2023-06-21 23:06:40,590: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:06:40,591: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 23:06:40,598: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:06:40,601: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:06:40,605: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:06:40,606: INFO: helper_functions: created directory at: artifacts/base_model]
+[2023-06-21 23:06:41,564: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-21 23:06:41,765: WARNING: optimizer: `lr` is deprecated, please use `learning_rate` instead, or use the legacy optimizer, e.g.,tf.keras.optimizers.legacy.SGD.]
+[2023-06-21 23:06:41,926: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:06:41,927: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage started >>>>>>>>>>>]
+[2023-06-21 23:06:41,935: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:06:41,940: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:06:41,941: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:06:41,942: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:06:41,944: INFO: main: <<<<<<<<< STAGE: Training Stage started >>>>>>>>>>>]
+[2023-06-21 23:06:41,955: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:06:41,960: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:06:41,962: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:06:41,963: ERROR: main: name 'os' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 45, in <module>
+    obj.main()
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_04_training.py", line 30, in main
+    raise e
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_04_training.py", line 17, in main
+    callbacks_config = config.get_callbacks_config()
+  File "d:\projects\chicken disease classification\src\CDC\config\configuration.py", line 49, in get_callbacks_config
+    model_checkpoint_dir = os.path.dirname(config.checkpoint_model_filepath)
+NameError: name 'os' is not defined
+[2023-06-21 23:06:41,972: INFO: main: <<<<<<<<< STAGE: Model Evaluation Stage started >>>>>>>>>>>]
+[2023-06-21 23:06:41,979: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:06:41,985: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:06:41,990: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:06:42,885: ERROR: main: Failed to find data adapter that can handle input: <class 'method'>, <class 'NoneType'>]
+Traceback (most recent call last):
+  File "main.py", line 56, in <module>
+    obj.main()
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_05_model_evaluation.py", line 22, in main
+    raise e
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_05_model_evaluation.py", line 18, in main
+    evaluation.evaluation()
+  File "d:\projects\chicken disease classification\src\CDC\components\model_evaluation.py", line 47, in evaluation
+    self.score = self.model.evaluate(self._valid_generator)
+  File "D:\Projects\Chicken Disease Classification\venv\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\Projects\Chicken Disease Classification\venv\lib\site-packages\keras\engine\data_adapter.py", line 1083, in select_data_adapter
+    _type_name(x), _type_name(y)
+ValueError: Failed to find data adapter that can handle input: <class 'method'>, <class 'NoneType'>
+[2023-06-21 23:07:12,393: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 23:07:12,410: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:07:12,430: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:07:12,431: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:07:12,433: INFO: helper_functions: created directory at: artifacts/data]
+[2023-06-21 23:07:12,434: INFO: data_ingestion: File already exists]
+[2023-06-21 23:07:12,885: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:07:12,885: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 23:07:12,893: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:07:12,896: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:07:12,898: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:07:12,900: INFO: helper_functions: created directory at: artifacts/base_model]
+[2023-06-21 23:07:13,582: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-21 23:07:13,733: WARNING: optimizer: `lr` is deprecated, please use `learning_rate` instead, or use the legacy optimizer, e.g.,tf.keras.optimizers.legacy.SGD.]
+[2023-06-21 23:07:13,893: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:07:13,894: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage started >>>>>>>>>>>]
+[2023-06-21 23:07:13,900: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:07:13,903: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:07:13,904: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:07:13,905: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:07:13,906: INFO: main: <<<<<<<<< STAGE: Training Stage started >>>>>>>>>>>]
+[2023-06-21 23:07:13,911: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:07:13,919: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:07:13,920: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:07:13,920: ERROR: main: name 'os' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 45, in <module>
+    obj.main()
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_04_training.py", line 30, in main
+    raise e
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_04_training.py", line 17, in main
+    callbacks_config = config.get_callbacks_config()
+  File "d:\projects\chicken disease classification\src\CDC\config\configuration.py", line 49, in get_callbacks_config
+    model_checkpoint_dir = os.path.dirname(config.checkpoint_model_filepath)
+NameError: name 'os' is not defined
+[2023-06-21 23:07:13,925: INFO: main: <<<<<<<<< STAGE: Model Evaluation Stage started >>>>>>>>>>>]
+[2023-06-21 23:07:13,929: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:07:13,943: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:07:13,946: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:07:56,447: INFO: main: <<<<<<<<< STAGE: Model Evaluation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:08:16,901: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 23:08:16,908: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:08:16,913: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:08:16,915: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:08:16,919: INFO: helper_functions: created directory at: artifacts/data]
+[2023-06-21 23:08:16,922: INFO: data_ingestion: File already exists]
+[2023-06-21 23:08:17,391: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:08:17,392: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 23:08:17,404: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:08:17,409: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:08:17,411: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:08:17,413: INFO: helper_functions: created directory at: artifacts/base_model]
+[2023-06-21 23:08:18,136: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-21 23:08:18,301: WARNING: optimizer: `lr` is deprecated, please use `learning_rate` instead, or use the legacy optimizer, e.g.,tf.keras.optimizers.legacy.SGD.]
+[2023-06-21 23:08:18,446: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:08:18,447: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage started >>>>>>>>>>>]
+[2023-06-21 23:08:18,453: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:08:18,456: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:08:18,457: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:08:18,458: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:08:18,459: INFO: main: <<<<<<<<< STAGE: Training Stage started >>>>>>>>>>>]
+[2023-06-21 23:08:18,464: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:08:18,467: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:08:18,469: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:08:18,469: ERROR: main: name 'os' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 45, in <module>
+    obj.main()
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_04_training.py", line 30, in main
+    raise e
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_04_training.py", line 17, in main
+    callbacks_config = config.get_callbacks_config()
+  File "d:\projects\chicken disease classification\src\CDC\config\configuration.py", line 49, in get_callbacks_config
+    model_checkpoint_dir = os.path.dirname(config.checkpoint_model_filepath)
+NameError: name 'os' is not defined
+[2023-06-21 23:08:18,478: INFO: main: <<<<<<<<< STAGE: Model Evaluation Stage started >>>>>>>>>>>]
+[2023-06-21 23:08:18,486: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:08:18,491: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:08:18,493: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:09:23,994: ERROR: main: name 'save_json' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 56, in <module>
+    obj.main()
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_05_model_evaluation.py", line 23, in main
+    raise e
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_05_model_evaluation.py", line 19, in main
+    evaluation.save_score()
+  File "d:\projects\chicken disease classification\src\CDC\components\model_evaluation.py", line 52, in save_score
+    save_json(path=Path("scores.json"), content=scores)
+NameError: name 'save_json' is not defined
+[2023-06-21 23:10:23,046: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 23:10:23,053: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:10:23,057: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:10:23,062: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:10:23,067: INFO: helper_functions: created directory at: artifacts/data]
+[2023-06-21 23:10:23,069: INFO: data_ingestion: File already exists]
+[2023-06-21 23:10:23,532: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:10:23,533: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 23:10:23,540: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:10:23,546: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:10:23,548: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:10:23,549: INFO: helper_functions: created directory at: artifacts/base_model]
+[2023-06-21 23:10:24,278: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-21 23:10:24,459: WARNING: optimizer: `lr` is deprecated, please use `learning_rate` instead, or use the legacy optimizer, e.g.,tf.keras.optimizers.legacy.SGD.]
+[2023-06-21 23:10:24,617: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:10:24,618: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage started >>>>>>>>>>>]
+[2023-06-21 23:10:24,625: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:10:24,631: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:10:24,634: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:10:24,635: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:10:24,636: INFO: main: <<<<<<<<< STAGE: Training Stage started >>>>>>>>>>>]
+[2023-06-21 23:10:24,640: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:10:24,646: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:10:24,650: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:10:24,651: ERROR: main: name 'os' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 45, in <module>
+    obj.main()
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_04_training.py", line 30, in main
+    raise e
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_04_training.py", line 17, in main
+    callbacks_config = config.get_callbacks_config()
+  File "d:\projects\chicken disease classification\src\CDC\config\configuration.py", line 49, in get_callbacks_config
+    model_checkpoint_dir = os.path.dirname(config.checkpoint_model_filepath)
+NameError: name 'os' is not defined
+[2023-06-21 23:10:24,656: INFO: main: <<<<<<<<< STAGE: Model Evaluation Stage started >>>>>>>>>>>]
+[2023-06-21 23:10:24,668: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:10:24,673: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:10:24,674: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:11:15,616: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 23:11:15,625: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:11:15,634: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:11:15,642: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:11:15,644: INFO: helper_functions: created directory at: artifacts/data]
+[2023-06-21 23:11:15,649: INFO: data_ingestion: File already exists]
+[2023-06-21 23:11:16,182: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:11:16,182: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 23:11:16,193: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:11:16,197: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:11:16,198: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:11:16,199: INFO: helper_functions: created directory at: artifacts/base_model]
+[2023-06-21 23:11:17,187: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-21 23:11:17,364: WARNING: optimizer: `lr` is deprecated, please use `learning_rate` instead, or use the legacy optimizer, e.g.,tf.keras.optimizers.legacy.SGD.]
+[2023-06-21 23:11:17,524: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:11:17,525: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage started >>>>>>>>>>>]
+[2023-06-21 23:11:17,532: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:11:17,535: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:11:17,536: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:11:17,538: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:11:17,539: INFO: main: <<<<<<<<< STAGE: Training Stage started >>>>>>>>>>>]
+[2023-06-21 23:11:17,547: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:11:17,551: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:11:17,553: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:11:17,554: ERROR: main: name 'os' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 45, in <module>
+    obj.main()
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_04_training.py", line 30, in main
+    raise e
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_04_training.py", line 17, in main
+    callbacks_config = config.get_callbacks_config()
+  File "d:\projects\chicken disease classification\src\CDC\config\configuration.py", line 49, in get_callbacks_config
+    model_checkpoint_dir = os.path.dirname(config.checkpoint_model_filepath)
+NameError: name 'os' is not defined
+[2023-06-21 23:11:17,562: INFO: main: <<<<<<<<< STAGE: Model Evaluation Stage started >>>>>>>>>>>]
+[2023-06-21 23:11:17,568: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:11:17,574: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:11:17,576: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:12:20,788: INFO: helper_functions: json file \scores.json saved successfully]
+[2023-06-21 23:12:20,789: ERROR: main: isinstance() arg 2 must be a type or tuple of types]
+Traceback (most recent call last):
+  File "main.py", line 56, in <module>
+    obj.main()
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_05_model_evaluation.py", line 23, in main
+    raise e
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_05_model_evaluation.py", line 19, in main
+    evaluation.save_score()
+  File "d:\projects\chicken disease classification\src\CDC\components\model_evaluation.py", line 53, in save_score
+    save_json(path=Path("/scores.json"), content=scores)
+  File "D:\Projects\Chicken Disease Classification\venv\lib\site-packages\ensure\main.py", line 850, in __call__
+    if not isinstance(return_val, self.return_templ):
+TypeError: isinstance() arg 2 must be a type or tuple of types
+[2023-06-21 23:13:52,729: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 23:13:52,734: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:13:52,738: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:13:52,739: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:13:52,742: INFO: helper_functions: created directory at: artifacts/data]
+[2023-06-21 23:13:52,744: INFO: data_ingestion: File already exists]
+[2023-06-21 23:13:53,250: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:13:53,250: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 23:13:53,256: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:13:53,264: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:13:53,266: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:13:53,267: INFO: helper_functions: created directory at: artifacts/base_model]
+[2023-06-21 23:13:54,136: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-21 23:13:54,339: WARNING: optimizer: `lr` is deprecated, please use `learning_rate` instead, or use the legacy optimizer, e.g.,tf.keras.optimizers.legacy.SGD.]
+[2023-06-21 23:13:54,506: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:13:54,506: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage started >>>>>>>>>>>]
+[2023-06-21 23:13:54,514: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:13:54,518: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:13:54,519: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:13:54,520: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:13:54,521: INFO: main: <<<<<<<<< STAGE: Training Stage started >>>>>>>>>>>]
+[2023-06-21 23:13:54,533: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:13:54,537: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:13:54,539: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:13:54,541: ERROR: main: name 'os' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 45, in <module>
+    obj.main()
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_04_training.py", line 30, in main
+    raise e
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_04_training.py", line 17, in main
+    callbacks_config = config.get_callbacks_config()
+  File "d:\projects\chicken disease classification\src\CDC\config\configuration.py", line 49, in get_callbacks_config
+    model_checkpoint_dir = os.path.dirname(config.checkpoint_model_filepath)
+NameError: name 'os' is not defined
+[2023-06-21 23:13:54,548: INFO: main: <<<<<<<<< STAGE: Model Evaluation Stage started >>>>>>>>>>>]
+[2023-06-21 23:13:54,553: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:13:54,561: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:13:54,562: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:14:49,855: INFO: helper_functions: json file saved at: \scores.json]
+[2023-06-21 23:14:49,857: INFO: main: <<<<<<<<< STAGE: Model Evaluation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:16:28,086: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 23:16:28,187: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:16:28,286: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:16:28,328: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:16:28,332: INFO: helper_functions: created directory at: artifacts/data]
+[2023-06-21 23:16:28,337: INFO: data_ingestion: File already exists]
+[2023-06-21 23:16:29,770: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:16:29,771: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage started >>>>>>>>>>>]
+[2023-06-21 23:16:29,810: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:16:29,818: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:16:29,820: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:16:29,827: INFO: helper_functions: created directory at: artifacts/base_model]
+[2023-06-21 23:16:31,041: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-06-21 23:16:31,293: WARNING: optimizer: `lr` is deprecated, please use `learning_rate` instead, or use the legacy optimizer, e.g.,tf.keras.optimizers.legacy.SGD.]
+[2023-06-21 23:16:31,534: INFO: main: <<<<<<<<< STAGE: Data Ingestation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:16:31,535: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage started >>>>>>>>>>>]
+[2023-06-21 23:16:31,549: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:16:31,558: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:16:31,564: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:16:31,566: INFO: main: <<<<<<<<< STAGE: Callbacks Preparation Stage completed >>>>>>>>>>>]
+[2023-06-21 23:16:31,567: INFO: main: <<<<<<<<< STAGE: Training Stage started >>>>>>>>>>>]
+[2023-06-21 23:16:31,581: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:16:31,585: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:16:31,586: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:16:31,593: ERROR: main: name 'os' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 45, in <module>
+    obj.main()
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_04_training.py", line 30, in main
+    raise e
+  File "d:\projects\chicken disease classification\src\CDC\pipeline\stage_04_training.py", line 17, in main
+    callbacks_config = config.get_callbacks_config()
+  File "d:\projects\chicken disease classification\src\CDC\config\configuration.py", line 49, in get_callbacks_config
+    model_checkpoint_dir = os.path.dirname(config.checkpoint_model_filepath)
+NameError: name 'os' is not defined
+[2023-06-21 23:16:31,615: INFO: main: <<<<<<<<< STAGE: Model Evaluation Stage started >>>>>>>>>>>]
+[2023-06-21 23:16:31,628: INFO: helper_functions: yaml file config\config.yaml uploaded successfully]
+[2023-06-21 23:16:31,635: INFO: helper_functions: yaml file params.yaml uploaded successfully]
+[2023-06-21 23:16:31,636: INFO: helper_functions: created directory at: artifacts]
+[2023-06-21 23:17:27,664: INFO: helper_functions: json file saved at: scores.json]
+[2023-06-21 23:17:27,672: INFO: main: <<<<<<<<< STAGE: Model Evaluation Stage completed >>>>>>>>>>>]

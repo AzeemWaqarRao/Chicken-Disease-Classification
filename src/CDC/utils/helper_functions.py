@@ -7,6 +7,7 @@ from box.exceptions import BoxValueError
 from ensure import ensure_annotations
 from typing import Any
 from CDC import logger
+import json
 
 
 @ensure_annotations
@@ -28,20 +29,17 @@ def read_yaml(filename: Path) -> ConfigBox:
 
 
 @ensure_annotations
-def save_json(path: Path, content: dict) -> None:
+def save_json(path: Path, content: dict):
+    """save json data
+
+    Args:
+        path (Path): path to json file
+        data (dict): data to be saved in json file
     """
-    Saves a dictionary to a JSON file.
-    """
-    try:
-        with open(path, "w") as f:
-            json.dump(content, f)
-        logger.info(f"json file {path} saved successfully")
-    except FileNotFoundError as e:
-        logger.error(f"json file {path} not found")
-        raise e
-    except BoxValueError as e:
-        logger.error(f"json file {path} is empty")
-        raise ValueError("file is empty")
+    with open(path, "w") as f:
+        json.dump(content, f, indent=4)
+
+    logger.info(f"json file saved at: {path}")
 
 @ensure_annotations
 def load_json(path: Path) -> ConfigBox:
